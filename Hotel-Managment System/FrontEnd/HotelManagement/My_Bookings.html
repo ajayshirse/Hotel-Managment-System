@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Bookings</title>
+    <link rel="stylesheet" href="Style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body class="bookings-body">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2 class="logo">HotelBooking</h2>
+
+        <div class="nav-links">
+            <a href="./Rooms.html">Rooms</a>
+            <a href="./Booking.html">Book Room</a>
+            <a href="./Login.html" class="logout">Logout</a>
+        </div>
+    </nav>
+
+    <h1 class="heading">My Bookings </h1>
+    <div class="filter-box">
+    <input type="date">
+    <input type="date">
+    <button>Filter</button>
+    </div>
+    <!-- Table -->
+    <div class="table-container">
+        <table>
+    <thead>
+        <tr>
+            <th>Room</th>
+            <th>Check-in</th>
+            <th>Check-out</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="bookingTable">
+    </tbody>
+</table>
+    </div>
+    <div class="pagination">
+    <button>Prev</button>
+    <span>Page 1</span>
+    <button>Next</button>
+</div>
+<script src="./My_Booking.js"></script>
+</body>
+</html>
